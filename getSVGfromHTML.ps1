@@ -50,7 +50,7 @@ foreach ($svg in $svgs) {
             }
         }
 
-        $filePath = $OutDir + '\' + $fileName + ".svg"
+        $filePath = $OutputDir + '\' + $fileName + ".svg"
         Out-File -FilePath $filePath -Encoding utf8 -InputObject $svgDoc.OuterXml
     }
 }
